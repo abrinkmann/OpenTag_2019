@@ -23,10 +23,10 @@ def get_dataloader(opt):
         valid_y = pickle.load(inp)
         test_x = pickle.load(inp)
         test_att = pickle.load(inp)
-        test_value = pickle.load(inp)
+        #test_value = pickle.load(inp) - unclear if it is needed
         test_y = pickle.load(inp)
-    print("train len:",train_x.shape)
-    print("test len:",test_x.shape)
+    print("train len:", train_x.shape)
+    print("test len:", test_x.shape)
     print("valid len", valid_x.shape)
 
     train_dataset = MyDataset(train_x, train_y, train_att)

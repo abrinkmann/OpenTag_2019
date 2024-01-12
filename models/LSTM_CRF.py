@@ -10,6 +10,7 @@ class NERLSTM_CRF(BasicModule):
     def __init__(self, opt, embedding_dim=200, hidden_dim=300, dropout=0.2, word2id=100000, tag2id=4):
         super(NERLSTM_CRF, self).__init__()
 
+        self.model_name = 'NERLSTM_CRF'
         self.opt = opt
         self.embedding_dim = embedding_dim
         self.hidden_dim = hidden_dim
